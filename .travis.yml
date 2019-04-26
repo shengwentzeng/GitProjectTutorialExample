@@ -26,10 +26,10 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_API_KEY
+    secure: 7f6162ae-5d28-486e-b0da-ad398e9c3dce
   app: test-my-travisci-project
   on:
-    repo: jimting/GitProjectTutorialExample
+    repo: shengwentzeng/GitProjectTutorialExample
   #Setting your heroku Procfile here!!!
   run:
     "web: gunicorn app_run:app"
